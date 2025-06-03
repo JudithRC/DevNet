@@ -1,6 +1,6 @@
 title: DevNest
 description: Página para conocer más sobre mis proyectos y repositorios.
-theme: "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-feed
