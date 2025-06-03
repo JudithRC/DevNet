@@ -18,3 +18,8 @@ nav:
 # Configuración baseurl si usas GitHub Pages en una subcarpeta
 baseurl: "/rep-zone"
 
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
