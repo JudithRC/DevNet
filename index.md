@@ -1,5 +1,8 @@
-# Acerca de mis proyectos
+---
+layout: home
+title: DevNest-Home
+---
 
-Aquí encontrarás información sobre mis proyectos y repositorios.
-
-<!-- Agrega aquí lo que quieras mostrar -->
+## ¡Hola! 👋 
+### Aquí JudithRC. 
+En esta zona comparto información sobre mis proyectos y repositorios. ¿Tienes curiosidad? ¡Adelante, échales un vistazo!
