@@ -1,6 +1,6 @@
 ---
 layout: home
-title: DevNest
+#title: DevNest
 author_profile: true
 ---
 

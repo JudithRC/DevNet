@@ -1,5 +1,3 @@
 main:
-  - title: "Inicio"
-    url: "/"
   - title: "Proyectos"
     url: "/proyectos/"
