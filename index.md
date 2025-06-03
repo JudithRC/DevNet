@@ -1,6 +1,5 @@
 ---
 layout: home
-title: DevNest - Inicio
 css: /assets/css/style.css
 ---
 
