@@ -1,3 +1,20 @@
 title: DevNest
 description: Página para conocer más sobre mis proyectos y repositorios.
+theme: "minimal-mistakes-jekyll"
+minimal_mistakes_skin: "dark"
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# Navegación principal de ejemplo
+nav:
+  - title: "Inicio"
+    url: "/"
+  - title: "Proyectos"
+    url: "/proyectos/"
+
+# Configuración baseurl si usas GitHub Pages en una subcarpeta
+# baseurl: "/rep-zone"
 

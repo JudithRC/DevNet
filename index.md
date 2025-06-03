@@ -1,6 +1,7 @@
 ---
 layout: home
 title: DevNest
+author_profile: true
 ---
 
 <h1>¡Hola!</h1>
@@ -9,7 +10,7 @@ title: DevNest
 <ul class="proyectos-lista">
   <li class="proyecto-item">
     <h2>
-      <a href="{{ site.baseurl }}/2025/06/10/proyecto2.html">
+      <a href="{{ site.baseurl }}/">
         ¡Recién salido del horno!
       </a>
     </h2>
