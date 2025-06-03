@@ -4,9 +4,10 @@ layout: home
 author_profile: true
 ---
 
-<h1>¡Hola!</h1>
-<h3>👋 Soy JudithRC.</h3>
+<h1>¡Hola! 👋 </h1>
+<h3>Soy JudithRC.</h3>
 <p>Aquí comparto el avance y detalles de mis proyectos. ¡Explora y sigue el progreso!</p>
+<!-- 
 <ul class="proyectos-lista">
   <li class="proyecto-item">
     <h2>
@@ -15,6 +16,6 @@ author_profile: true
       </a>
     </h2>
     <p>Breve descripción del proyecto aquí.</p>
-  </li>
+  </li>  -->
   <!-- Puedes añadir más proyectos aquí -->
 </ul>
