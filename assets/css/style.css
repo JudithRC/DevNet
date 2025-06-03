@@ -1,7 +1,7 @@
 /* Tema oscuro y estilo minimalista */
 @font-face {
-  font-family: 'WALLINGTON PRO';
-  src: url('../fonts/WALLINGTONPRO-Regular.otf') format('opentype');
+  font-family: 'LUXIA';
+  src: url('../fonts/LUXIA-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 body {
   background: #181a1b;
   color: #eaeaea;
-  font-family: 'WALLINGTON PRO', Arial, sans-serif;
+  font-family: 'LUXIA', Arial, sans-serif;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -29,7 +29,7 @@ header h1 {
   font-size: 2.2rem;
   letter-spacing: 1px;
   font-weight: 400;
-  font-family: 'WALLINGTON PRO', Arial, sans-serif;
+  font-family: 'LUXIA', Arial, sans-serif;
 }
 
 header a {
@@ -48,7 +48,7 @@ header a:hover {
   margin: 0 auto;
   padding: 0 24px 40px 24px;
   font-weight: 300;
-  font-family: 'WALLINGTON PRO', Arial, sans-serif;
+  font-family: 'LUXIA', Arial, sans-serif;
 }
 
 .proyectos-lista {
@@ -74,7 +74,7 @@ header a:hover {
   margin: 0 0 8px 0;
   font-size: 1.3rem;
   font-weight: 400;
-  font-family: 'WALLINGTON PRO', Arial, sans-serif;
+  font-family: 'LUXIA', Arial, sans-serif;
 }
 
 .proyecto-item a {
@@ -102,7 +102,7 @@ header a:hover {
   margin-top: 0;
   color: #61dafb;
   font-weight: 400;
-  font-family: 'WALLINGTON PRO', Arial, sans-serif;
+  font-family: 'LUXIA', Arial, sans-serif;
 }
 
 .detalle-proyecto p {
