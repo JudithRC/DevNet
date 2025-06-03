@@ -23,18 +23,18 @@
 }
 
 .proyecto-img.central {
-  transform: scale(1.15) rotate(0deg);
+  transform: scale(1.15) rotate(0deg) translateY(-20px);
   box-shadow: 0 8px 32px rgba(0,0,0,0.22);
   opacity: 1;
   z-index: 3;
 }
 
 .proyecto-img.izquierda {
-  transform: scale(0.95) rotate(-15deg) translateY(20px);
+  transform: scale(0.95) rotate(-10deg) translateY(10px);
   z-index: 2;
 }
 
 .proyecto-img.derecha {
-  transform: scale(0.95) rotate(15deg) translateY(20px);
+  transform: scale(0.95) rotate(10deg) translateY(10px);
   z-index: 2;
 }
