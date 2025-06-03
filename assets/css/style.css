@@ -23,18 +23,22 @@
 
 .carrusel-inner {
   position: relative;
-  overflow: hidden; /* Añadido para ocultar imágenes fuera del área visible */
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .carrusel-items {
   display: flex;
   width: 300%;
   transition: transform 0.4s ease;
+  animation: carrusel-auto 15s infinite;
 }
 
 .carrusel-item {
   width: 100%;
-  flex-shrink: 0;
+  flex: 0 0 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,18 +68,14 @@
   transition: background 0.3s;
 }
 
-#img1:checked ~ .carrusel-inner .carrusel-items { transform: translateX(0%); }
-#img2:checked ~ .carrusel-inner .carrusel-items { transform: translateX(-100%); }
-#img3:checked ~ .carrusel-inner .carrusel-items { transform: translateX(-200%); }
-
-#img1:checked ~ .carrusel-inner .carrusel-controls label[for="img1"],
-#img2:checked ~ .carrusel-inner .carrusel-controls label[for="img2"],
-#img3:checked ~ .carrusel-inner .carrusel-controls label[for="img3"] {
-  background: #2d3a4c;
-}
-
-.carrusel input[type="radio"] {
-  display: none;
+@keyframes carrusel-auto {
+  0% { transform: translateX(0%); }
+  27% { transform: translateX(0%); }
+  33% { transform: translateX(-100%); }
+  60% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  93% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
 }
 
 /* Opcional: estilos para el resto de la sección */
