@@ -1,4 +1,5 @@
 ---
+title: ""
 layout: home
 css: /assets/css/style.css
 ---
