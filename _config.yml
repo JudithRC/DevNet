@@ -16,5 +16,5 @@ nav:
     url: "/proyectos/"
 
 # Configuración baseurl si usas GitHub Pages en una subcarpeta
-# baseurl: "/rep-zone"
+baseurl: "/rep-zone"
 
