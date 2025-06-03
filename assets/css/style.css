@@ -1,10 +1,103 @@
+/* Tema oscuro y estilo minimalista */
 body {
-  background: #f7f7f7;
-  font-family: Arial, sans-serif;
-  color: #222;
+  background: #181a1b;
+  color: #eaeaea;
+  font-family: 'Inter', Arial, sans-serif;
   margin: 0;
-  padding: 40px;
+  padding: 0;
+  min-height: 100vh;
 }
-h1 {
-  color: #0088cc;
+
+header {
+  background: #23272a;
+  padding: 24px 0 16px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  margin-bottom: 32px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+header a {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+header a:hover {
+  color: #fff;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 24px 40px 24px;
+}
+
+.proyectos-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.proyecto-item {
+  background: #23272a;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s;
+}
+
+.proyecto-item:hover {
+  background: #2c3136;
+}
+
+.proyecto-item h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.3rem;
+}
+
+.proyecto-item a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.proyecto-item a:hover {
+  text-decoration: underline;
+}
+
+.proyecto-item p {
+  margin: 0;
+  color: #bdbdbd;
+}
+
+.detalle-proyecto {
+  background: #23272a;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.detalle-proyecto h2 {
+  margin-top: 0;
+  color: #61dafb;
+}
+
+.detalle-proyecto p {
+  color: #bdbdbd;
+}
+
+@media (max-width: 600px) {
+  .container, .detalle-proyecto {
+    padding: 12px;
+  }
+  header {
+    padding: 16px 0 8px 0;
+  }
 }
