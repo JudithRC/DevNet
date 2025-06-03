@@ -28,8 +28,7 @@
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  /* height opcional si quieres forzar altura fija */
-  /* height: 350px; */
+  height: 350px; /* Ajusta la altura según tus imágenes */
 }
 
 .carrusel-items {
@@ -49,6 +48,9 @@
 
 .carrusel-item img {
   max-width: 100%;
+  max-height: 320px; /* Ajusta para que no desborde verticalmente */
+  width: auto;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.11);
   border: 2px solid #eaeaea;
