@@ -29,7 +29,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  gap: 1.2rem;
+  gap: 2.2rem; /* Aumenta el espacio entre imágenes */
 }
 
 /* Imágenes más pequeñas */
