@@ -20,13 +20,13 @@ En esta zona comparto información sobre mis proyectos y repositorios. ¿Tienes 
 
       <div class="carrusel-items">
         <div class="carrusel-item" id="item1">
-          <img src="/assets/img/loginPage.png" alt="Captura 1" />
+          <img src="{{ site.baseurl }}/assets/img/loginPage.png" alt="Captura 1" />
         </div>
         <div class="carrusel-item" id="item2">
-          <img src="/assets/img/mapPage.png" alt="Captura 2" />
+          <img src="{{ site.baseurl }}/assets/img/mapPage.png" alt="Captura 2" />
         </div>
         <div class="carrusel-item" id="item3">
-          <img src="/assets/img/signupPage.png" alt="Captura 3" />
+          <img src="{{ site.baseurl }}/assets/img/signupPage.png" alt="Captura 3" />
         </div>
       </div>
 
