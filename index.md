@@ -13,11 +13,12 @@ En esta zona comparto información sobre mis proyectos y repositorios. ¿Tienes 
 <section id="proyecto-reciente">
   <h2>Proyecto Reciente</h2>
   <div class="carrusel">
-    <div class="carrusel-inner">
-      <input type="radio" name="carrusel" id="img1" checked>
-      <input type="radio" name="carrusel" id="img2">
-      <input type="radio" name="carrusel" id="img3">
+    <!-- Inputs fuera de carrusel-inner -->
+    <input type="radio" name="carrusel" id="img1" checked>
+    <input type="radio" name="carrusel" id="img2">
+    <input type="radio" name="carrusel" id="img3">
 
+    <div class="carrusel-inner">
       <div class="carrusel-items">
         <div class="carrusel-item" id="item1">
           <img src="{{ site.baseurl }}/assets/img/loginPage.png" alt="Captura 1" />
@@ -29,7 +30,6 @@ En esta zona comparto información sobre mis proyectos y repositorios. ¿Tienes 
           <img src="{{ site.baseurl }}/assets/img/signupPage.png" alt="Captura 3" />
         </div>
       </div>
-
       <div class="carrusel-controls">
         <label for="img1"></label>
         <label for="img2"></label>
@@ -37,6 +37,6 @@ En esta zona comparto información sobre mis proyectos y repositorios. ¿Tienes 
       </div>
     </div>
   </div>
-  <h3><a href="/2025/06/03/proyecto1.html">Nombre del Proyecto</a></h3>
+  <h3><a href="{{ site.baseurl }}/2025/06/03/proyecto1.html">Proyecto 1</a></h3>
   <p>Breve descripción del proyecto aquí.</p>
 </section>
