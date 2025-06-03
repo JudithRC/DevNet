@@ -17,6 +17,7 @@
 .carrusel {
   position: relative;
   width: 100%;
+  max-width: 600px;
   overflow: hidden;
   margin-bottom: 1em;
 }
@@ -27,6 +28,8 @@
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+  /* height opcional si quieres forzar altura fija */
+  /* height: 350px; */
 }
 
 .carrusel-items {
@@ -37,8 +40,8 @@
 }
 
 .carrusel-item {
-  width: 100%;
   flex: 0 0 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
