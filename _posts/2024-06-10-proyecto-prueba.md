@@ -4,6 +4,7 @@ title: "Proyecto de Prueba"
 date: 2024-06-10
 author: JudithRC
 categories: proyectos
+estado: completado
 ---
 
 <ul class="proyectos-lista">
