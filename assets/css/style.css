@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: 'Rustic Roadway';
-  src: url('../fonts/rustic-roadway-personal-use.ttf') format('truetype');
+  src: url('../fonts/RusticRoadway.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
@@ -33,7 +33,22 @@ header, .masthead {
   min-height: unset;
 }
 
-header .masthead-title, .masthead__title, header h1,
+header .masthead-title, .masthead__title, header h1 {
+  font-family: 'Rustic Roadway', 'LUXIA', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #fff;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  display: block;
+  text-align: left;
+  margin-left: 32px;
+  font-size: 2.1rem;
+  line-height: 1.1;
+}
+
 .apartado-titulo,
 .proyecto-item h2 {
   font-family: 'Rustic Roadway', 'LUXIA', Arial, sans-serif;
