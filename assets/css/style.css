@@ -1,4 +1,4 @@
-/* Tema oscuro y estilo minimalista */
+/* Tema oscuro, moderno y tecnológico */
 @font-face {
   font-family: 'LUXIA';
   src: url('../fonts/LUXIA-Regular.otf') format('opentype');
@@ -7,29 +7,35 @@
 }
 
 body {
-  background: #181a1b;
+  background: linear-gradient(135deg, #181a1b 0%, #23272a 100%);
   color: #eaeaea;
   font-family: 'LUXIA', Arial, sans-serif;
   font-weight: 300;
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  letter-spacing: 0.01em;
 }
 
 header {
-  background: #23272a;
-  padding: 24px 0 16px 0;
+  background: rgba(35,39,42,0.98);
+  padding: 32px 0 20px 0;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  margin-bottom: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  margin-bottom: 40px;
+  border-bottom: 2px solid #61dafb33;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.2rem;
-  letter-spacing: 1px;
-  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 500;
   font-family: 'LUXIA', Arial, sans-serif;
+  background: linear-gradient(90deg, #61dafb 30%, #a1ffce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 header a {
@@ -44,7 +50,7 @@ header a:hover {
 }
 
 .container {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 24px 40px 24px;
   font-weight: 300;
@@ -55,47 +61,85 @@ header a:hover {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+@media (max-width: 900px) {
+  .proyectos-lista {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
 
 .proyecto-item {
-  background: #23272a;
-  border-radius: 10px;
-  margin-bottom: 24px;
-  padding: 24px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  transition: background 0.2s;
+  background: linear-gradient(120deg, #23272a 80%, #23272a44 100%);
+  border-radius: 18px;
+  margin-bottom: 0;
+  padding: 32px 28px 28px 28px;
+  box-shadow: 0 4px 32px rgba(97,218,251,0.07), 0 1.5px 8px rgba(0,0,0,0.13);
+  border: 1.5px solid #61dafb33;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.18s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.proyecto-item::before {
+  content: '';
+  position: absolute;
+  top: -60px; left: -60px;
+  width: 120px; height: 120px;
+  background: radial-gradient(circle, #61dafb33 0%, transparent 80%);
+  z-index: 0;
 }
 
 .proyecto-item:hover {
-  background: #2c3136;
+  background: linear-gradient(120deg, #23272a 60%, #61dafb22 100%);
+  box-shadow: 0 8px 40px #61dafb33, 0 2px 16px rgba(0,0,0,0.18);
+  transform: translateY(-6px) scale(1.025);
+  border-color: #61dafb88;
 }
 
 .proyecto-item h2 {
-  margin: 0 0 8px 0;
-  font-size: 1.3rem;
-  font-weight: 400;
+  margin: 0 0 10px 0;
+  font-size: 1.35rem;
+  font-weight: 500;
   font-family: 'LUXIA', Arial, sans-serif;
+  color: #61dafb;
+  z-index: 1;
+  position: relative;
 }
 
 .proyecto-item a {
   color: #61dafb;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.18s;
+  z-index: 1;
+  position: relative;
 }
 
 .proyecto-item a:hover {
+  color: #a1ffce;
   text-decoration: underline;
 }
 
 .proyecto-item p {
   margin: 0;
   color: #bdbdbd;
+  z-index: 1;
+  position: relative;
+  font-size: 1.05rem;
 }
 
 .detalle-proyecto {
   background: #23272a;
-  border-radius: 10px;
-  padding: 32px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  border-radius: 14px;
+  padding: 40px 32px;
+  box-shadow: 0 2px 16px rgba(97,218,251,0.10), 0 1.5px 8px rgba(0,0,0,0.13);
+  border: 1.5px solid #61dafb33;
 }
 
 .detalle-proyecto h2 {
@@ -115,5 +159,12 @@ header a:hover {
   }
   header {
     padding: 16px 0 8px 0;
+  }
+  .proyectos-lista {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .proyecto-item {
+    padding: 20px 10px 18px 10px;
   }
 }
