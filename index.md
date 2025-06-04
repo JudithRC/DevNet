@@ -12,32 +12,36 @@ author_profile: true
 
 <section class="proyectos-curso">
   <h2 class="apartado-titulo">Proyectos en curso</h2>
-  <ul class="proyectos-lista">
+  <ul class="proyectos-lista" style="justify-content:center;align-items:center;">
     <!-- Proyecto destacado en curso -->
-    <li class="proyecto-item">
-      <h2>Proyecto de Prueba destacado <span style="color:#a1ffce;font-size:0.9em;">★ Destacado</span></h2>
-      <p>Este es el proyecto destacado.</p>
-      <a class="btn-proyecto" href="{{ site.baseurl }}/proyectos/proyecto-destacado/">Ver avance</a>
+    <li class="proyecto-item card-proyecto">
+      <div class="card-contenido">
+        <h2 style="text-align:center;">Proyecto de Prueba destacado <span style="color:#a1ffce;font-size:0.9em;">★ Destacado</span></h2>
+        <p style="text-align:center;">Este es el proyecto destacado.</p>
+        <a class="btn-proyecto" href="{{ site.baseurl }}/proyectos/proyecto-destacado/">Ver avance</a>
+      </div>
     </li>
     <!-- Añade más proyectos en curso aquí -->
   </ul>
 </section>
-
+<hr class="divisor" />
 <section class="proyectos-previos">
   <h2 class="apartado-titulo">Proyectos previos</h2>
   {% assign proyectos_previos = site.posts | where_exp: 'post', 'post.estado == "completado"' %}
   {% if proyectos_previos.size > 0 %}
-    <ul class="proyectos-lista">
+    <ul class="proyectos-lista" style="justify-content:center;align-items:center;">
       {% for post in proyectos_previos %}
-        <li class="proyecto-item">
-          <h2>{{ post.title }}</h2>
-          <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
-          <a class="btn-proyecto" href="{{ post.url | relative_url }}">Ver proyecto</a>
+        <li class="proyecto-item card-proyecto">
+          <div class="card-contenido">
+            <h2 style="text-align:center;">{{ post.title }}</h2>
+            <p style="text-align:center;">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+            <a class="btn-proyecto" href="{{ post.url | relative_url }}">Ver proyecto</a>
+          </div>
         </li>
       {% endfor %}
     </ul>
   {% else %}
-    <p>No hay proyectos previos publicados aún.</p>
+    <p style="text-align:center;">No hay proyectos previos publicados aún.</p>
   {% endif %}
 </section>
 
