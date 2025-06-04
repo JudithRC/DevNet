@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 #title: DevNest
 author_profile: true
 ---
@@ -17,7 +17,7 @@ author_profile: true
     <li class="proyecto-item">
       <h2>Proyecto de Prueba destacado <span style="color:#a1ffce;font-size:0.9em;">★ Destacado</span></h2>
       <p>Este es el proyecto destacado.</p>
-      <a class="btn-proyecto" href="/proyectos/proyecto-destacado/">Ver avance</a>
+      <a class="btn-proyecto" href="{{ site.baseurl }}/proyectos/proyecto-destacado/">Ver avance</a>
     </li>
     <!-- Añade más proyectos en curso aquí -->
   </ul>
