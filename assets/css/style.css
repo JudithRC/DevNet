@@ -25,7 +25,9 @@
 }
 
 body {
-  background: linear-gradient(135deg, #181a1b 0%, #23272a 100%);
+  background: linear-gradient(270deg, #18191a, #35393b, #484b61, #4e5480, #383f69, #272b45, #20222e, #18191a);
+  background-size: 400% 400%;
+  animation: gradientBG 18s ease-in-out infinite;
   color: #eaeaea;
   font-family: 'Olivera', Arial, sans-serif;
   font-weight: 300;
@@ -33,6 +35,18 @@ body {
   padding: 0;
   min-height: 100vh;
   letter-spacing: 0.01em;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 header, .masthead {
