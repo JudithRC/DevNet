@@ -19,11 +19,11 @@ body {
 
 header, .masthead {
   background: linear-gradient(135deg, #181a1b 0%, #23272a 100%);
-  padding: 32px 0 20px 0;
+  padding: 24px 0 12px 0;
   text-align: center;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
-  margin-bottom: 40px;
-  border-bottom: 2px solid #58128a;
+  box-shadow: none;
+  margin-bottom: 32px;
+  border-bottom: none;
 }
 
 header h1, .masthead-title, .masthead__title {
@@ -125,13 +125,13 @@ header a:hover, .masthead a:hover {
   font-size: 1.35rem;
   font-weight: 500;
   font-family: 'LUXIA', Arial, sans-serif;
-  color: #61dafb;
+  color: #fff;
   z-index: 1;
   position: relative;
 }
 
 .proyecto-item a {
-  color: #61dafb;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.18s;
@@ -146,10 +146,15 @@ header a:hover, .masthead a:hover {
 
 .proyecto-item p {
   margin: 0;
-  color: #bdbdbd;
+  color: #fff;
   z-index: 1;
   position: relative;
   font-size: 1.05rem;
+}
+
+.proyecto-item .destacado {
+  color: #FFD700 !important;
+  font-weight: bold;
 }
 
 .detalle-proyecto {
