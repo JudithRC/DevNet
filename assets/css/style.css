@@ -5,6 +5,12 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Rustic Roadway';
+  src: url('../fonts/rustic-roadway-personal-use.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 body {
   background: linear-gradient(135deg, #181a1b 0%, #23272a 100%);
@@ -19,36 +25,29 @@ body {
 
 header, .masthead {
   background: #181a1b;
-  padding: 24px 0 12px 0;
-  text-align: center;
+  padding: 8px 0 8px 0;
+  text-align: left;
   box-shadow: none;
   margin-bottom: 32px;
   border-bottom: none;
+  min-height: unset;
 }
 
-header h1, .masthead-title, .masthead__title {
-  margin: 0;
-  font-size: 2.5rem;
+header .masthead-title, .masthead__title, header h1,
+.apartado-titulo,
+.proyecto-item h2 {
+  font-family: 'Rustic Roadway', 'LUXIA', Arial, sans-serif;
+  font-weight: 400;
   letter-spacing: 2px;
-  font-weight: 500;
-  font-family: 'LUXIA', Arial, sans-serif;
-  background: linear-gradient(90deg, #61dafb 30%, #570691 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #fff;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  display: inline-block;
 }
 
-header a, .masthead a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  pointer-events: none;
-  cursor: default;
-}
-
-header a:hover, .masthead a:hover {
-  color: #fff;
-  text-decoration: none;
+header nav, .masthead-nav, .masthead-menu, .masthead__menu {
+  display: none !important;
 }
 
 .container {
