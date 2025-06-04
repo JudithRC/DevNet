@@ -64,8 +64,8 @@ header .masthead-title, .masthead__title, header h1 {
 header .logo-devnest {
   font-family: 'Rustic Roadway', 'Olivera', Arial, sans-serif;
   font-weight: 400;
-  font-size: 2.1rem;
-  letter-spacing: 2px;
+  font-size: 2.5rem;
+  letter-spacing: 2.5px;
   color: #fff;
   text-decoration: none;
   display: inline-block;
@@ -83,21 +83,31 @@ header .logo-devnest:hover {
 .proyecto-item h2 {
   font-family: 'Awesome Font', 'Olivera', Arial, sans-serif;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   color: #fff;
+  font-size: 2.1rem;
+  line-height: 1.15;
   -webkit-background-clip: unset;
   -webkit-text-fill-color: unset;
   background-clip: unset;
   display: inline-block;
 }
 
-.bienvenida h1,
+.bienvenida h1 {
+  font-family: 'Awesome Font', 'Olivera', Arial, sans-serif;
+  font-size: 2.6rem;
+  margin-bottom: 0.2em;
+}
 .bienvenida h2 {
   font-family: 'Awesome Font', 'Olivera', Arial, sans-serif;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
 .bienvenida p {
   font-family: 'Olivera', Arial, sans-serif;
+  font-size: 1.18rem;
 }
 
 header nav, .masthead-nav, .masthead-menu, .masthead__menu {
