@@ -18,7 +18,7 @@ body {
 }
 
 header, .masthead {
-  background: linear-gradient(135deg, #181a1b 0%, #23272a 100%);
+  background: #181a1b;
   padding: 24px 0 12px 0;
   text-align: center;
   box-shadow: none;
@@ -39,14 +39,16 @@ header h1, .masthead-title, .masthead__title {
 }
 
 header a, .masthead a {
-  color: #61dafb;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.2s;
+  pointer-events: none;
+  cursor: default;
 }
 
 header a:hover, .masthead a:hover {
-  color: #570691;
+  color: #fff;
+  text-decoration: none;
 }
 
 .container {
