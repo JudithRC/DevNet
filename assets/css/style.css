@@ -17,36 +17,36 @@ body {
   letter-spacing: 0.01em;
 }
 
-header {
+header, .masthead {
   background: rgba(35,39,42,0.98);
   padding: 32px 0 20px 0;
   text-align: center;
   box-shadow: 0 4px 24px rgba(0,0,0,0.12);
   margin-bottom: 40px;
-  border-bottom: 2px solid #61dafb33;
+  border-bottom: 2px solid #57069155;
 }
 
-header h1 {
+header h1, .masthead-title, .masthead__title {
   margin: 0;
   font-size: 2.5rem;
   letter-spacing: 2px;
   font-weight: 500;
   font-family: 'LUXIA', Arial, sans-serif;
-  background: linear-gradient(90deg, #61dafb 30%, #a1ffce 100%);
+  background: linear-gradient(90deg, #61dafb 30%, #570691 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-header a {
+header a, .masthead a {
   color: #61dafb;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.2s;
 }
 
-header a:hover {
-  color: #fff;
+header a:hover, .masthead a:hover {
+  color: #570691;
 }
 
 .container {
@@ -214,8 +214,8 @@ header a:hover {
   display: inline-block;
   margin: 18px auto 0 auto;
   padding: 10px 32px;
-  background: linear-gradient(90deg, #61dafb 40%, #a1ffce 100%);
-  color: #181a1b;
+  background: linear-gradient(90deg, #61dafb 40%, #570691 100%);
+  color: #fff;
   font-family: 'LUXIA', Arial, sans-serif;
   font-weight: 600;
   font-size: 1.08rem;
@@ -229,9 +229,9 @@ header a:hover {
 }
 
 .btn-proyecto:hover {
-  background: linear-gradient(90deg, #a1ffce 10%, #61dafb 90%);
-  color: #23272a;
-  box-shadow: 0 4px 24px #61dafb55;
+  background: linear-gradient(90deg, #570691 10%, #61dafb 90%);
+  color: #fff;
+  box-shadow: 0 4px 24px #57069155;
   transform: translateY(-2px) scale(1.04);
   text-decoration: none;
 }
