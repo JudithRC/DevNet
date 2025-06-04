@@ -11,11 +11,23 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Awesome Font';
+  src: url('../fonts/AwesomeFont.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Olivera';
+  src: url('../fonts/Olivera.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 body {
   background: linear-gradient(135deg, #181a1b 0%, #23272a 100%);
   color: #eaeaea;
-  font-family: 'Rustic Roadway', 'LUXIA', Arial, sans-serif;
+  font-family: 'Olivera', Arial, sans-serif;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -50,7 +62,7 @@ header .masthead-title, .masthead__title, header h1 {
 }
 
 header .logo-devnest {
-  font-family: 'Rustic Roadway', 'LUXIA', Arial, sans-serif;
+  font-family: 'Rustic Roadway', 'Olivera', Arial, sans-serif;
   font-weight: 400;
   font-size: 2.1rem;
   letter-spacing: 2px;
@@ -69,7 +81,7 @@ header .logo-devnest:hover {
 
 .apartado-titulo,
 .proyecto-item h2 {
-  font-family: 'Rustic Roadway', 'LUXIA', Arial, sans-serif;
+  font-family: 'Awesome Font', 'Olivera', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 2px;
   color: #fff;
@@ -77,6 +89,15 @@ header .logo-devnest:hover {
   -webkit-text-fill-color: unset;
   background-clip: unset;
   display: inline-block;
+}
+
+.bienvenida h1,
+.bienvenida h2 {
+  font-family: 'Awesome Font', 'Olivera', Arial, sans-serif;
+}
+
+.bienvenida p {
+  font-family: 'Olivera', Arial, sans-serif;
 }
 
 header nav, .masthead-nav, .masthead-menu, .masthead__menu {
