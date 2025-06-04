@@ -15,7 +15,7 @@
 body {
   background: linear-gradient(135deg, #181a1b 0%, #23272a 100%);
   color: #eaeaea;
-  font-family: 'LUXIA', Arial, sans-serif;
+  font-family: 'Rustic Roadway', 'LUXIA', Arial, sans-serif;
   font-weight: 300;
   margin: 0;
   padding: 0;
@@ -47,6 +47,24 @@ header .masthead-title, .masthead__title, header h1 {
   margin-left: 32px;
   font-size: 2.1rem;
   line-height: 1.1;
+}
+
+header .logo-devnest {
+  font-family: 'Rustic Roadway', 'LUXIA', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 32px;
+  line-height: 1.1;
+  vertical-align: middle;
+}
+
+header .logo-devnest:hover {
+  color: #a1ffce;
+  text-decoration: underline;
 }
 
 .apartado-titulo,
