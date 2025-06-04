@@ -6,7 +6,7 @@ author_profile: true
 
 <div class="container bienvenida" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:40vh;text-align:center;">
   <h1>¡Hola! 👋</h1>
-  <h2>Soy JudithRC 😀</h2>
+  <h2>Soy JudithRC</h2>
   <p>Bienvenido a mi espacio personal donde comparto el avance y detalles de mis proyectos. Explora, descubre y sigue el progreso de cada idea en desarrollo.</p>
 </div>
 
