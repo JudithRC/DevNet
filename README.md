@@ -6,7 +6,7 @@ Este repositorio contiene el código fuente de mi página personal, donde compar
 
 ## Vista previa
 
-Puedes ver la web publicada aquí: [https://judithrc.github.io/DevNet/](https://judithrc.github.io/DevNet/)
+Puedes ver la web publicada en [este enlace](https://judithrc.github.io/DevNet/).
 
 ## Tabla de contenidos
 - [Descripción](#descripción)
