@@ -13,13 +13,13 @@
 }
 @font-face {
   font-family: 'Awesome Font';
-  src: url('../fonts/AwesomeFont.otf') format('opentype');
+  src: url('../fonts/Awesome.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Olivera';
-  src: url('../fonts/Olivera.otf') format('opentype');
+  src: url('../fonts/Olivera_Demo.ttf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
