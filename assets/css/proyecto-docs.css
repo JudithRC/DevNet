@@ -173,7 +173,7 @@
 }
 .proyecto-section {
   display: none;
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto 48px auto;
   animation: fadeIn 0.3s;
   background: none;
@@ -193,8 +193,10 @@
   text-align: left;
 }
 .proyecto-section .contenido-section {
-  margin-left: 32px;
-  margin-right: 32px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 24px;
+  padding-right: 24px;
   text-align: left;
   font-size: 1.45rem;
   line-height: 1.7;
