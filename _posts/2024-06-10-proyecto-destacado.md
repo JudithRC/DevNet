@@ -5,7 +5,6 @@ date: 2024-06-10
 author: JudithRC
 categories: proyectos
 permalink: /proyectos/proyecto-destacado/
-estado: en_curso
 destacado: Si
 ---
 

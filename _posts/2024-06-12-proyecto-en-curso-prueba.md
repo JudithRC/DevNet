@@ -5,6 +5,7 @@ date: 2024-06-12
 author: JudithRC
 categories: proyectos
 permalink: /proyectos/proyecto-en-curso-prueba/
+estado: en_curso
 destacado: No
 ---
 <!-- resumen -->
