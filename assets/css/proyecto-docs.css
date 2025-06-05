@@ -134,8 +134,11 @@
   box-shadow: 0 1px 4px #FFD70033;
   display: inline-block;
   line-height: 1.2;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
 }
-.etiqueta-estado {
+.etiqueta-estado, .etiqueta-destacado {
   font-weight: bold;
   border-radius: 6px;
   padding: 1px 8px;
@@ -144,6 +147,9 @@
   letter-spacing: 0.5px;
   display: inline-block;
   line-height: 1.2;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
 }
 .etiqueta-curso {
   background: #b3e6ff;

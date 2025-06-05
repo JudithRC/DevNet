@@ -6,7 +6,7 @@ author: JudithRC
 categories: proyectos
 permalink: /proyectos/proyecto-destacado/
 estado: en_curso
-destacado: si
+destacado: Si
 ---
 
 <!-- resumen -->
