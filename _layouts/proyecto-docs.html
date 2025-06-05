@@ -36,47 +36,36 @@ layout: null
       </nav>
     </aside>
     <section class="proyecto-content">
+      {% assign content_blocks = content | split:'<!-- ' %}
+      {% assign resumen = content | split:'<!-- resumen -->' | last | split:'<!-- objetivos -->' | first %}
+      {% assign objetivos = content | split:'<!-- objetivos -->' | last | split:'<!-- tecnologias -->' | first %}
+      {% assign tecnologias = content | split:'<!-- tecnologias -->' | last | split:'<!-- equipo -->' | first %}
+      {% assign equipo = content | split:'<!-- equipo -->' | last | split:'<!-- enlaces -->' | first %}
+      {% assign enlaces = content | split:'<!-- enlaces -->' | last | split:'<!-- contenido-extra -->' | first %}
+      {% assign contenido_extra = content | split:'<!-- contenido-extra -->' | last %}
       <div id="resumen" class="proyecto-section active">
         <h2>Resumen</h2>
-        <p>{{ page.resumen | default: 'Añade un resumen del proyecto aquí.' }}</p>
+        <div class="contenido-section">{{ resumen | markdownify }}</div>
       </div>
       <div id="objetivos" class="proyecto-section">
         <h2>Objetivos</h2>
-        <ul>
-          {% for objetivo in page.objetivos %}
-            <li>{{ objetivo }}</li>
-          {% endfor %}
-        </ul>
+        <div class="contenido-section">{{ objetivos | markdownify }}</div>
       </div>
       <div id="tecnologias" class="proyecto-section">
         <h2>Tecnologías</h2>
-        <ul>
-          {% for tecnologia in page.tecnologias %}
-            <li>{{ tecnologia }}</li>
-          {% endfor %}
-        </ul>
+        <div class="contenido-section">{{ tecnologias | markdownify }}</div>
       </div>
       <div id="equipo" class="proyecto-section">
         <h2>Equipo</h2>
-        <ul class="equipo-lista">
-          {% for miembro in page.equipo %}
-            <li>{{ miembro }}</li>
-          {% endfor %}
-        </ul>
+        <div class="contenido-section">{{ equipo | markdownify }}</div>
       </div>
       <div id="enlaces" class="proyecto-section">
         <h2>Enlaces</h2>
-        {% if page.enlaces %}
-          {% for enlace in page.enlaces %}
-            <a href="{{ enlace.url }}" target="_blank">{{ enlace.nombre }}</a><br>
-          {% endfor %}
-        {% else %}
-          <p>No hay enlaces disponibles.</p>
-        {% endif %}
+        <div class="contenido-section">{{ enlaces | markdownify }}</div>
       </div>
       <div id="contenido-extra" class="proyecto-section">
         <h2>Contenido extra</h2>
-        {{ content }}
+        <div class="contenido-section">{{ contenido_extra | markdownify }}</div>
       </div>
     </section>
   </div>
