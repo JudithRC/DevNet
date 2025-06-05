@@ -185,9 +185,9 @@
 }
 .proyecto-section h2 {
   position: static;
-  margin: 0 0 18px 8px;
+  margin: 0 0 22px 8px;
   font-family: 'Rustic Roadway', Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 2.6rem;
   color: #61dafb;
   letter-spacing: 1px;
   text-align: left;
@@ -199,6 +199,8 @@
   margin-left: 32px;
   margin-right: 32px;
   text-align: left;
+  font-size: 1.45rem;
+  line-height: 1.7;
 }
 .proyecto-section.active {
   display: block;
