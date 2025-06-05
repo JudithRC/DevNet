@@ -138,7 +138,7 @@
   position: relative;
   top: -2px;
 }
-.etiqueta-estado, .etiqueta-destacado {
+.etiqueta-estado {
   font-weight: bold;
   border-radius: 6px;
   padding: 1px 8px;
@@ -150,16 +150,15 @@
   vertical-align: middle;
   position: relative;
   top: -2px;
+  background: none;
 }
 .etiqueta-curso {
-  background: #b3e6ff;
   color: #2176ae;
-  box-shadow: 0 1px 4px #b3e6ff55;
+  box-shadow: none;
 }
 .etiqueta-completado {
-  background: #b6f5c6;
   color: #1e7d3a;
-  box-shadow: 0 1px 4px #b6f5c655;
+  box-shadow: none;
 }
 /* Layout de documentación de proyectos: navegación lateral y contenido dinámico */
 .proyecto-doc-main {
