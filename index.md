@@ -33,41 +33,45 @@ author_profile: true
 
 <section class="proyectos-curso">
   <h2 class="apartado-titulo">Proyectos en curso</h2>
-  {% assign proyectos_curso = site.posts | where_exp: 'post', 'post.estado == "en_curso" and post.destacado != "Si"' %}
-  {% if proyectos_curso.size > 0 %}
-    <ul class="proyectos-lista" style="justify-content:center;align-items:center;">
-      {% for post in proyectos_curso %}
-        <li class="proyecto-item card-proyecto card-mdn">
-          <div class="card-contenido">
-            <h2 style="text-align:center;">{{ post.title }}</h2>
-            <p style="text-align:center;">{{ post.excerpt | strip_html | truncate: 120 }}</p>
-            <a class="btn-proyecto" href="{{ post.url | relative_url }}">Ver avance</a>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  {% else %}
-    <p style="text-align:center;">No hay proyectos en curso publicados aún.</p>
+  {% assign proyectos_curso = site.posts | where_exp: 'post', 'post.estado == "en_curso"%}
+  {% if 'post.destacado != "Si"' %}
+    {% if proyectos_curso.size > 0 %}
+      <ul class="proyectos-lista" style="justify-content:center;align-items:center;">
+        {% for post in proyectos_curso %}
+          <li class="proyecto-item card-proyecto card-mdn">
+            <div class="card-contenido">
+              <h2 style="text-align:center;">{{ post.title }}</h2>
+              <p style="text-align:center;">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+              <a class="btn-proyecto" href="{{ post.url | relative_url }}">Ver avance</a>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p style="text-align:center;">No hay proyectos en curso publicados aún.</p>
+    {% endif %}
   {% endif %}
 </section>
 
 <section class="proyectos-previos">
   <h2 class="apartado-titulo">Proyectos previos</h2>
-  {% assign proyectos_previos = site.posts | where_exp: 'post', 'post.estado == "completado" and post.destacado != "Si"' %}
-  {% if proyectos_previos.size > 0 %}
-    <ul class="proyectos-lista" style="justify-content:center;align-items:center;">
-      {% for post in proyectos_previos %}
-        <li class="proyecto-item card-proyecto card-mdn">
-          <div class="card-contenido">
-            <h2 style="text-align:center;">{{ post.title }}</h2>
-            <p style="text-align:center;">{{ post.excerpt | strip_html | truncate: 120 }}</p>
-            <a class="btn-proyecto" href="{{ post.url | relative_url }}">Ver avance</a>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  {% else %}
-    <p style="text-align:center;">No hay proyectos previos publicados aún.</p>
+  {% assign proyectos_previos = site.posts | where_exp: 'post', 'post.estado == "completado"%}
+  {% if proyectos_curso.size > 0 %}
+    {% if proyectos_previos.size > 0 %}
+      <ul class="proyectos-lista" style="justify-content:center;align-items:center;">
+        {% for post in proyectos_previos %}
+          <li class="proyecto-item card-proyecto card-mdn">
+            <div class="card-contenido">
+              <h2 style="text-align:center;">{{ post.title }}</h2>
+              <p style="text-align:center;">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+              <a class="btn-proyecto" href="{{ post.url | relative_url }}">Ver avance</a>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p style="text-align:center;">No hay proyectos previos publicados aún.</p>
+    {% endif %}
   {% endif %}
 </section>
 </div>
