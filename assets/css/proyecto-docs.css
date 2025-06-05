@@ -16,29 +16,33 @@
 }
 .proyecto-doc .proyecto-header {
   background: #181a1b;
-  padding: 36px 0 18px 0;
+  padding: 36px 0 0 0;
   text-align: left;
   border-bottom: 2px solid #61dafb33;
-  margin-bottom: 32px;
+  margin-bottom: 0;
 }
 .proyecto-doc .proyecto-header .logo-devnest {
   font-family: 'Rustic Roadway', Arial, sans-serif;
 }
 .proyecto-doc .proyecto-titulo-meta {
+  margin-top: 40px;
   margin-bottom: 32px;
+  padding-left: 8px;
 }
 .proyecto-doc .proyecto-titulo {
   font-family: 'Rustic Roadway', Arial, sans-serif;
-  font-size: 2.3rem;
+  font-size: 3.2rem;
+  font-weight: 700;
   color: #61dafb;
-  margin: 0 0 8px 32px;
+  margin: 0 0 16px 0;
   letter-spacing: 2px;
+  line-height: 1.1;
 }
 .proyecto-doc .proyecto-meta {
   font-family: 'Awesome Font', Arial, sans-serif;
   color: #bdbdbd;
-  font-size: 1.05rem;
-  margin-left: 32px;
+  font-size: 1.35rem;
+  margin-left: 0;
   margin-bottom: 12px;
 }
 .proyecto-doc h1,
