@@ -10,7 +10,11 @@
   </head>
   <body class="mm-page">
     <header>
-      <a class="logo-devnest" href="{{ '/' | relative_url }}">DevNest</a>
+      {% if page.url != '/' %}
+        <a class="logo-devnest" href="{{ '/' | relative_url }}">DevNest</a>
+      {% else %}
+        <span class="logo-devnest">DevNest</span>
+      {% endif %}
     </header>
     {%- include skip-links.html -%}
     <main id="main" class="page-content" aria-label="Content">
