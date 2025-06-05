@@ -19,48 +19,85 @@ layout: null
       {% if page.author %} | <span>Autor/a: {{ page.author }}</span>{% endif %}
     </div>
   </header>
-  <main class="proyecto-secciones">
-    <section class="seccion resumen">
-      <h3>Resumen</h3>
-      <p>{{ page.resumen | default: 'Añade un resumen del proyecto aquí.' }}</p>
+  <div class="proyecto-doc-main">
+    <aside class="proyecto-sidebar">
+      <nav>
+        <ul>
+          <li><a href="#" class="active" data-section="resumen">Resumen</a></li>
+          <li><a href="#" data-section="objetivos">Objetivos</a></li>
+          <li><a href="#" data-section="tecnologias">Tecnologías</a></li>
+          <li><a href="#" data-section="equipo">Equipo</a></li>
+          <li><a href="#" data-section="enlaces">Enlaces</a></li>
+          <li><a href="#" data-section="contenido-extra">Contenido extra</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <section class="proyecto-content">
+      <div id="resumen" class="proyecto-section active">
+        <h2>Resumen</h2>
+        <p>{{ page.resumen | default: 'Añade un resumen del proyecto aquí.' }}</p>
+      </div>
+      <div id="objetivos" class="proyecto-section">
+        <h2>Objetivos</h2>
+        <ul>
+          {% for objetivo in page.objetivos %}
+            <li>{{ objetivo }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div id="tecnologias" class="proyecto-section">
+        <h2>Tecnologías</h2>
+        <ul>
+          {% for tecnologia in page.tecnologias %}
+            <li>{{ tecnologia }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div id="equipo" class="proyecto-section">
+        <h2>Equipo</h2>
+        <ul class="equipo-lista">
+          {% for miembro in page.equipo %}
+            <li>{{ miembro }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div id="enlaces" class="proyecto-section">
+        <h2>Enlaces</h2>
+        {% if page.enlaces %}
+          {% for enlace in page.enlaces %}
+            <a href="{{ enlace.url }}" target="_blank">{{ enlace.nombre }}</a><br>
+          {% endfor %}
+        {% else %}
+          <p>No hay enlaces disponibles.</p>
+        {% endif %}
+      </div>
+      <div id="contenido-extra" class="proyecto-section">
+        <h2>Contenido extra</h2>
+        {{ content }}
+      </div>
     </section>
-    <section class="seccion objetivos">
-      <h3>Objetivos</h3>
-      <ul>
-        {% for objetivo in page.objetivos %}
-          <li>{{ objetivo }}</li>
-        {% endfor %}
-      </ul>
-    </section>
-    <section class="seccion tecnologias">
-      <h3>Tecnologías</h3>
-      <ul>
-        {% for tecnologia in page.tecnologias %}
-          <li>{{ tecnologia }}</li>
-        {% endfor %}
-      </ul>
-    </section>
-    <section class="seccion equipo">
-      <h3>Equipo</h3>
-      <ul class="equipo-lista">
-        {% for miembro in page.equipo %}
-          <li>{{ miembro }}</li>
-        {% endfor %}
-      </ul>
-    </section>
-    <section class="seccion enlaces-proyecto">
-      <h3>Enlaces</h3>
-      {% if page.enlaces %}
-        {% for enlace in page.enlaces %}
-          <a href="{{ enlace.url }}" target="_blank">{{ enlace.nombre }}</a>
-        {% endfor %}
-      {% else %}
-        <p>No hay enlaces disponibles.</p>
-      {% endif %}
-    </section>
-    <section class="seccion contenido-extra">
-      {{ content }}
-    </section>
-  </main>
+  </div>
+  <script>
+    // Navegación de secciones
+    document.addEventListener('DOMContentLoaded', function() {
+      const links = document.querySelectorAll('.proyecto-sidebar a');
+      const sections = document.querySelectorAll('.proyecto-section');
+      links.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          links.forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+          const sectionId = this.getAttribute('data-section');
+          sections.forEach(sec => {
+            if(sec.id === sectionId) {
+              sec.classList.add('active');
+            } else {
+              sec.classList.remove('active');
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>

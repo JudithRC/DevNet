@@ -1,0 +1,31 @@
+/*
+ * media-queries.css
+ *
+ * Media queries globales para adaptar el diseño a diferentes dispositivos.
+ * Añade aquí solo reglas @media.
+ */
+
+/* =========================
+   MEDIA QUERIES
+   ========================= */
+@media (max-width: 900px) {
+  .proyecto-doc-main { flex-direction: column; }
+  .proyecto-sidebar { width: 100%; flex-direction: row; border-right: none; border-bottom: 1.5px solid #23272a; padding: 0; }
+  .proyecto-sidebar nav { width: 100%; }
+  .proyecto-sidebar ul { display: flex; flex-direction: row; }
+  .proyecto-sidebar a { padding: 12px 18px; font-size: 1rem; border-left: none; border-bottom: 4px solid transparent; }
+  .proyecto-sidebar a.active, .proyecto-sidebar a:hover { border-left: none; border-bottom: 4px solid #61dafb; }
+  .proyecto-content { padding: 24px 8vw 24px 8vw; }
+  .proyectos-lista { grid-template-columns: 1fr; gap: 24px; }
+}
+@media (max-width: 600px) {
+  .container, .detalle-proyecto { padding: 12px; }
+  header { padding: 16px 0 8px 0; }
+  .card-proyecto, .card-mdn { padding: 20px 10px 18px 10px; max-width: 98vw; }
+  .proyectos-lista { gap: 16px; }
+}
+@media (max-width: 700px) {
+  .proyecto-doc .proyecto-titulo, .proyecto-doc .proyecto-meta { margin-left: 10px; }
+  .proyecto-doc .proyecto-secciones { padding: 0 4vw 24px 4vw; }
+  .proyecto-doc .seccion { padding: 16px 8px; }
+}

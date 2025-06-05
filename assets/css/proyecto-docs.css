@@ -1,0 +1,153 @@
+/*
+ * proyecto-docs.css
+ *
+ * Estilos exclusivos para el layout de documentación de proyectos.
+ * Incluye: navegación lateral, estructura de secciones, detalles de proyecto, etc.
+ */
+
+/* =========================
+   ESTILOS DOCUMENTACIÓN DE PROYECTOS
+   ========================= */
+.proyecto-doc {
+  background: linear-gradient(120deg, #23272a 60%, #1a1d1f 100%);
+  min-height: 100vh;
+  padding: 0;
+  font-family: 'LUXIA', Arial, sans-serif;
+}
+.proyecto-doc .proyecto-header {
+  background: #181a1b;
+  padding: 36px 0 18px 0;
+  text-align: left;
+  border-bottom: 2px solid #61dafb33;
+  margin-bottom: 32px;
+}
+.proyecto-doc .proyecto-titulo {
+  font-family: 'Rustic Roadway', 'LUXIA', Arial, sans-serif;
+  font-size: 2.3rem;
+  color: #61dafb;
+  margin: 0 0 8px 32px;
+  letter-spacing: 2px;
+}
+.proyecto-doc .proyecto-meta {
+  color: #bdbdbd;
+  font-size: 1.05rem;
+  margin-left: 32px;
+  margin-bottom: 12px;
+}
+.proyecto-doc .proyecto-secciones {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px 40px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.proyecto-doc .seccion {
+  background: #23272a;
+  border-radius: 14px;
+  padding: 32px 28px;
+  box-shadow: 0 2px 16px rgba(97,218,251,0.10), 0 1.5px 8px rgba(0,0,0,0.13);
+  border: 1.5px solid #61dafb22;
+}
+.proyecto-doc .seccion h3 {
+  color: #61dafb;
+  font-family: 'LUXIA', Arial, sans-serif;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.proyecto-doc .seccion ul, .proyecto-doc .seccion ol {
+  color: #eaeaea;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+.proyecto-doc .seccion p {
+  color: #bdbdbd;
+  margin-top: 0;
+  margin-bottom: 0.7em;
+}
+.proyecto-doc .equipo-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.proyecto-doc .equipo-lista li {
+  background: #181a1b;
+  border-radius: 8px;
+  padding: 10px 18px;
+  color: #eaeaea;
+  font-size: 1rem;
+  box-shadow: 0 1px 4px #61dafb11;
+}
+.proyecto-doc .enlaces-proyecto a {
+  color: #61dafb;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-right: 18px;
+}
+/* Layout de documentación de proyectos: navegación lateral y contenido dinámico */
+.proyecto-doc-main {
+  display: flex;
+  min-height: 100vh;
+}
+.proyecto-sidebar {
+  width: 240px;
+  background: #191b1e;
+  border-right: 1.5px solid #23272a;
+  padding: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-height: 100vh;
+}
+.proyecto-sidebar nav {
+  width: 100%;
+}
+.proyecto-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.proyecto-sidebar li {
+  width: 100%;
+}
+.proyecto-sidebar a {
+  display: block;
+  padding: 16px 32px;
+  color: #eaeaea;
+  text-decoration: none;
+  font-family: 'LUXIA', Arial, sans-serif;
+  font-size: 1.08rem;
+  border-left: 4px solid transparent;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.proyecto-sidebar a.active, .proyecto-sidebar a:hover {
+  background: #23272a;
+  color: #61dafb;
+  border-left: 4px solid #61dafb;
+}
+.proyecto-content {
+  flex: 1;
+  padding: 48px 40px 40px 40px;
+  background: linear-gradient(120deg, #23272a 60%, #1a1d1f 100%);
+  min-height: 100vh;
+  font-family: 'LUXIA', Arial, sans-serif;
+}
+.proyecto-section {
+  display: none;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeIn 0.3s;
+}
+.proyecto-section.active {
+  display: block;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}

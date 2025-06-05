@@ -1,0 +1,129 @@
+/*
+ * index.css
+ *
+ * Estilos específicos para la página de inicio (index) y cards de proyectos.
+ * Incluye: listas de proyectos, cards, divisores, botones, etc.
+ */
+
+/* =========================
+   ESTILOS INDEX Y CARDS DE PROYECTOS
+   ========================= */
+.proyectos-lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.proyecto-item {
+  background: linear-gradient(120deg, #23272a 80%, #23272a44 100%);
+  border-radius: 18px;
+  margin-bottom: 0;
+  padding: 32px 28px 28px 28px;
+  box-shadow: 0 4px 32px rgba(97,218,251,0.07), 0 1.5px 8px rgba(0,0,0,0.13);
+  border: 1.5px solid #61dafb33;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.18s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.proyecto-item::before {
+  content: '';
+  position: absolute;
+  top: -60px; left: -60px;
+  width: 120px; height: 120px;
+  background: radial-gradient(circle, #61dafb33 0%, transparent 80%);
+  z-index: 0;
+}
+.proyecto-item:hover {
+  background: linear-gradient(120deg, #23272a 60%, #61dafb22 100%);
+  box-shadow: 0 8px 40px #61dafb33, 0 2px 16px rgba(0,0,0,0.18);
+  transform: translateY(-6px) scale(1.025);
+  border-color: #61dafb88;
+}
+.proyecto-item h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.35rem;
+  font-weight: 500;
+  font-family: 'LUXIA', Arial, sans-serif;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+}
+.proyecto-item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.18s;
+  z-index: 1;
+  position: relative;
+}
+.proyecto-item a:hover {
+  color: #a1ffce;
+  text-decoration: underline;
+}
+.proyecto-item p {
+  margin: 0;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  font-size: 1.05rem;
+}
+.proyecto-item .destacado {
+  color: #FFD700 !important;
+  font-weight: bold;
+}
+/* Detalle de proyecto (legacy), cards y divisores */
+.detalle-proyecto {
+  background: #23272a;
+  border-radius: 14px;
+  padding: 40px 32px;
+  box-shadow: 0 2px 16px rgba(97,218,251,0.10), 0 1.5px 8px rgba(0,0,0,0.13);
+  border: 1.5px solid #61dafb33;
+}
+.detalle-proyecto h2 {
+  margin-top: 0;
+  color: #61dafb;
+  font-weight: 400;
+  font-family: 'LUXIA', Arial, sans-serif;
+}
+.detalle-proyecto p {
+  color: #bdbdbd;
+}
+.divisor {
+  border: none;
+  border-top: 1.5px solid #61dafb55;
+  margin: 48px auto 40px auto;
+  width: 60%;
+  max-width: 400px;
+  opacity: 0.7;
+  box-shadow: 0 1px 8px #61dafb22;
+}
+.card-proyecto, .card-mdn {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12), 0 1.5px 8px rgba(97,218,251,0.07);
+  border-radius: 16px;
+  background: #23272a;
+  border: 1.5px solid #61dafb33;
+  padding: 32px 28px 28px 28px;
+  margin: 0 auto 32px auto;
+  max-width: 370px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.18s;
+}
+.card-proyecto:hover, .card-mdn:hover {
+  box-shadow: 0 8px 32px #61dafb33, 0 2px 16px rgba(0,0,0,0.18);
+  transform: translateY(-6px) scale(1.025);
+  border-color: #61dafb88;
+}
+.card-contenido {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

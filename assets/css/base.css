@@ -1,0 +1,115 @@
+/*
+ * base.css
+ *
+ * Estilos generales y de base para todo el sitio DevNet.
+ * Incluye: body, tipografía, contenedores, header, títulos, etc.
+ * No añadir estilos específicos de páginas aquí.
+ */
+
+/* =========================
+   ESTILOS GENERALES Y BASE
+   ========================= */
+body {
+  background: linear-gradient(270deg, #1c1f21, #222a30, #283742, #3b5075, #3e3b75, #483b75, #433a63, #37324a, #272430, #1c1b21, #1c1f21);
+  background-size: 400% 400%;
+  animation: gradientBG 18s ease-in-out infinite;
+  color: #eaeaea;
+  font-family: 'Olivera', Arial, sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  letter-spacing: 0.01em;
+}
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/* HEADER Y LOGO */
+header, .masthead {
+  background: #181a1b;
+  padding: 8px 0 8px 0;
+  text-align: left;
+  box-shadow: none;
+  margin-bottom: 32px;
+  border-bottom: none;
+  min-height: unset;
+}
+header .masthead-title, .masthead__title, header h1 {
+  font-family: 'Rustic Roadway', 'LUXIA', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #fff;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  display: block;
+  text-align: left;
+  margin-left: 32px;
+  font-size: 2.1rem;
+  line-height: 1.1;
+}
+header .logo-devnest {
+  font-family: 'Rustic Roadway', 'Olivera', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: 2.5px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 32px;
+  line-height: 1.1;
+  vertical-align: middle;
+}
+header .logo-devnest:hover {
+  color: #a1ffce;
+  text-decoration: underline;
+}
+/* TIPOGRAFÍA Y TITULOS */
+.apartado-titulo,
+.proyecto-item h2 {
+  font-family: 'Awesome Font', 'Olivera', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  color: #fff;
+  font-size: 2.1rem;
+  line-height: 1.15;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  display: inline-block;
+}
+.bienvenida h1 {
+  font-family: 'Awesome Font', 'Olivera', Arial, sans-serif;
+  font-size: 2.6rem;
+  margin-bottom: 0.2em;
+}
+.bienvenida h2 {
+  font-family: 'Awesome Font', 'Olivera', Arial, sans-serif;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.bienvenida p {
+  font-family: 'Olivera', Arial, sans-serif;
+  font-size: 1.18rem;
+}
+/* CONTENEDORES GENERALES */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px 40px 24px;
+  font-weight: 300;
+  font-family: 'LUXIA', Arial, sans-serif;
+}
+.main-central {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 16px 40px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
