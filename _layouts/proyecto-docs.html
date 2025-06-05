@@ -13,13 +13,15 @@ layout: null
 <body class="proyecto-doc">
   <header class="proyecto-header">
     <a class="logo-devnest" href="{{ '/' | relative_url }}">DevNest</a>
+  </header>
+  <div class="proyecto-titulo-meta">
     <h1 class="proyecto-titulo">{{ page.title }}</h1>
     <div class="proyecto-meta">
       <span>Fecha: {{ page.date | date: '%d/%m/%Y' }}</span>
       {% if page.estado %} | <span>Estado: {{ page.estado }}</span>{% endif %}
       {% if page.author %} | <span>Autor/a: {{ page.author }}</span>{% endif %}
     </div>
-  </header>
+  </div>
   <div class="proyecto-doc-main">
     <aside class="proyecto-sidebar">
       <nav>
