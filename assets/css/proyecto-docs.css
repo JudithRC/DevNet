@@ -16,13 +16,21 @@
 }
 .proyecto-doc .proyecto-header {
   background: #181a1b;
-  padding: 36px 0 0 0;
+  padding: 0;
   text-align: left;
   border-bottom: 2px solid #61dafb33;
   margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 80px;
 }
 .proyecto-doc .proyecto-header .logo-devnest {
   font-family: 'Rustic Roadway', Arial, sans-serif;
+  font-size: 2.2rem;
+  margin-left: 32px;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
 }
 .proyecto-doc .proyecto-titulo-meta {
   margin-top: 40px;
@@ -166,27 +174,31 @@
 .proyecto-section {
   display: none;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 48px auto;
   animation: fadeIn 0.3s;
+  background: none;
+  border-radius: 0;
+  padding: 0 0 0 0;
+  box-shadow: none;
+  border: none;
   position: relative;
-  background: #23272a;
-  border-radius: 14px;
-  padding: 40px 32px 32px 32px;
-  box-shadow: 0 2px 16px rgba(97,218,251,0.10), 0 1.5px 8px rgba(0,0,0,0.13);
-  border: 1.5px solid #61dafb22;
 }
 .proyecto-section h2 {
-  position: absolute;
-  top: 24px;
-  left: 32px;
-  margin: 0;
+  position: static;
+  margin: 0 0 18px 8px;
   font-family: 'Rustic Roadway', Arial, sans-serif;
   font-size: 2rem;
   color: #61dafb;
   letter-spacing: 1px;
+  text-align: left;
 }
-.proyecto-section .contenido-section {
-  margin-top: 56px;
+.proyecto-section .contenido-section,
+.proyecto-section > p,
+.proyecto-section > ul,
+.proyecto-section > div {
+  margin-left: 32px;
+  margin-right: 32px;
+  text-align: left;
 }
 .proyecto-section.active {
   display: block;
