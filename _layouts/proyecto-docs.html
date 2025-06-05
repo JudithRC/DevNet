@@ -18,8 +18,10 @@ layout: null
     <h1 class="proyecto-titulo">{{ page.title }}</h1>
     <div class="proyecto-meta">
       <span>Fecha: {{ page.date | date: '%d/%m/%Y' }}</span>
-      {% if page.estado %} | <span>Estado: {{ page.estado }}</span>{% endif %}
+      {% if page.estado == 'en_curso' %} | <span class="etiqueta-estado etiqueta-curso">En curso</span>{% endif %}
+      {% if page.estado == 'completado' %} | <span class="etiqueta-estado etiqueta-completado">Completado</span>{% endif %}
       {% if page.author %} | <span>Autor/a: {{ page.author }}</span>{% endif %}
+      {% if page.destacado == 'Si' %} | <span class="etiqueta-destacado">Destacado</span>{% endif %}
     </div>
   </div>
   <div class="proyecto-doc-main">

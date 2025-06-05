@@ -122,6 +122,37 @@
   font-weight: 500;
   margin-right: 18px;
 }
+.etiqueta-destacado {
+  background: #FFD70022;
+  color: #FFD700;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 2px 12px;
+  margin-left: 8px;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 4px #FFD70033;
+  display: inline-block;
+}
+.etiqueta-estado {
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 2px 12px;
+  margin-left: 8px;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+.etiqueta-curso {
+  background: #b3e6ff;
+  color: #2176ae;
+  box-shadow: 0 1px 4px #b3e6ff55;
+}
+.etiqueta-completado {
+  background: #b6f5c6;
+  color: #1e7d3a;
+  box-shadow: 0 1px 4px #b6f5c655;
+}
 /* Layout de documentación de proyectos: navegación lateral y contenido dinámico */
 .proyecto-doc-main {
   display: flex;
