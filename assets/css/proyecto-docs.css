@@ -213,3 +213,9 @@
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: none; }
 }
+html, body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #23272a 60%, #1a1d1f 100%);
+  background-color: #23272a;
+  box-sizing: border-box;
+}
