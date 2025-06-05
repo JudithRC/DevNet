@@ -4,6 +4,12 @@ layout: default
 author_profile: true
 ---
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.body.classList.add('index-gradient-bg');
+});
+</script>
+
 <div class="container bienvenida" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:40vh;text-align:center;">
   <h1>¡Hola! 👋</h1>
   <h2>Aquí JudithRC</h2>
