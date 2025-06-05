@@ -36,7 +36,7 @@ author_profile: true
           <div class="card-contenido">
             <h2 style="text-align:center;">{{ post.title }}</h2>
             <p style="text-align:center;">{{ post.excerpt | strip_html | truncate: 120 }}</p>
-            <a class="btn-proyecto" href="{{ post.url | relative_url }}">Ver proyecto</a>
+            <a class="btn-proyecto" href="{{ site.baseurl }}/proyectos/proyecto-prueba/">Ver proyecto</a>
           </div>
         </li>
       {% endfor %}
