@@ -20,6 +20,7 @@ body {
   padding: 0;
   min-height: 100vh;
   letter-spacing: 0.01em;
+  font-size: 0.97rem;
 }
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
@@ -48,13 +49,13 @@ header .masthead-title, .masthead__title, header h1 {
   display: block;
   text-align: left;
   margin-left: 32px;
-  font-size: 2.1rem;
+  font-size: 1.7rem;
   line-height: 1.1;
 }
 header .logo-devnest {
   font-family: 'Rustic Roadway', 'Olivera', Arial, sans-serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 2.5px;
   color: #fff;
   text-decoration: none;
@@ -74,7 +75,7 @@ header .logo-devnest:hover {
   font-weight: 400;
   letter-spacing: 2.5px;
   color: #fff;
-  font-size: 2.1rem;
+  font-size: 1.7rem;
   line-height: 1.15;
   -webkit-background-clip: unset;
   -webkit-text-fill-color: unset;
@@ -83,18 +84,18 @@ header .logo-devnest:hover {
 }
 .bienvenida h1 {
   font-family: 'Awesome Font', 'Olivera', Arial, sans-serif;
-  font-size: 2.6rem;
+  font-size: 2.1rem;
   margin-bottom: 0.2em;
 }
 .bienvenida h2 {
   font-family: 'Awesome Font', 'Olivera', Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-top: 0;
   margin-bottom: 0.5em;
 }
 .bienvenida p {
   font-family: 'Olivera', Arial, sans-serif;
-  font-size: 1.18rem;
+  font-size: 1rem;
 }
 /* CONTENEDORES GENERALES */
 .container {
@@ -103,6 +104,7 @@ header .logo-devnest:hover {
   padding: 0 24px 40px 24px;
   font-weight: 300;
   font-family:  Arial, sans-serif;
+  font-size: 0.97rem;
 }
 .main-central {
   max-width: 700px;

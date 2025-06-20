@@ -13,6 +13,7 @@
   min-height: 100vh;
   padding: 0;
   font-family: Arial, sans-serif;
+  font-size: 0.89rem;
 }
 .proyecto-doc .proyecto-header {
   background: #181a1b;
@@ -26,7 +27,7 @@
 }
 .proyecto-doc .proyecto-header .logo-devnest {
   font-family: 'Rustic Roadway', Arial, sans-serif;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-left: 32px;
   line-height: 1.1;
   display: inline-block;
@@ -39,7 +40,7 @@
 }
 .proyecto-doc .proyecto-titulo {
   font-family: 'Rustic Roadway', Arial, sans-serif;
-  font-size: 3.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #61dafb;
   margin: 0 0 16px 0;
@@ -49,7 +50,7 @@
 .proyecto-doc .proyecto-meta {
   font-family: 'Awesome Font', Arial, sans-serif;
   color: #bdbdbd;
-  font-size: 1.35rem;
+  font-size: 0.95rem;
   margin-left: 0;
   margin-bottom: 12px;
 }
@@ -57,7 +58,7 @@
 .proyecto-doc h2,
 .proyecto-doc h3 {
   font-family: 'Rustic Roadway', Arial, sans-serif;
-  font-size: large;
+  font-size: 1rem;
 }
 .proyecto-doc .proyecto-section,
 .proyecto-doc .proyecto-section p,
@@ -192,7 +193,7 @@
   padding: 16px 32px;
   color: #eaeaea;
   text-decoration: none;
-  font-family: Arial, sans-serif;
+  font-family: 'Rustic Roadway', Arial, sans-serif;
   font-size: 1.08rem;
   border-left: 4px solid transparent;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
@@ -225,7 +226,7 @@
   position: static;
   margin: 0 0 22px 8px;
   font-family: 'Rustic Roadway', Arial, sans-serif;
-  font-size: 2.6rem;
+  font-size: 1.25rem;
   color: #61dafb;
   letter-spacing: 1px;
   text-align: left;
@@ -236,13 +237,20 @@
   padding-left: 24px;
   padding-right: 24px;
   text-align: left;
-  font-size: 1.45rem;
-  line-height: 1.7;
-  font-family: 'Olivera', Arial, sans-serif;
+  font-family: 'Fenix', 'Olivera', Arial, sans-serif;
+  font-size: clamp(1rem, 1.1vw + 1vh, 1.22rem);
+  line-height: 1.5;
+  font-feature-settings: "liga" 0, "kern" 1;
+  font-variant-ligatures: none;
+  font-weight: 300;
 }
 .proyecto-section .contenido-section * {
-  font-size: 1.45rem !important;
-  font-family: 'Olivera', Arial, sans-serif !important;
+  font-family: 'Fenix', 'Olivera', Arial, sans-serif !important;
+  font-size: clamp(1rem, 1.1vw + 1vh, 1.22rem) !important;
+  line-height: 1.5 !important;
+  font-feature-settings: "liga" 0, "kern" 1 !important;
+  font-variant-ligatures: none !important;
+  font-weight: 300 !important;
 }
 .proyecto-section.active {
   display: block;
@@ -256,4 +264,50 @@ html, body {
   background: linear-gradient(120deg, #23272a 60%, #1a1d1f 100%);
   background-color: #23272a;
   box-sizing: border-box;
+}
+.proyecto-card-info {
+  background: #181a1b;
+  border: 1.5px solid #61dafb33;
+  border-radius: 14px;
+  padding: 28px 28px 18px 28px;
+  margin: 32px 0 32px 0;
+  box-shadow: 0 2px 16px rgba(97,218,251,0.10), 0 1.5px 8px rgba(0,0,0,0.13);
+  font-family: 'Olivera', Arial, sans-serif;
+  font-size: clamp(1rem, 1.1vw + 1vh, 1.22rem);
+  color: #eaeaea;
+  line-height: 1.5;
+}
+.proyecto-card-info h4,
+.proyecto-card-info h3,
+.proyecto-card-info h2,
+.proyecto-card-info h1,
+.proyecto-card-info strong {
+  font-family: 'Rustic Roadway', Arial, sans-serif;
+  color: #61dafb;
+  font-weight: 700;
+}
+.proyecto-card-info ul,
+.proyecto-card-info ol {
+  color: #eaeaea;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding-left: 22px;
+  font-family: 'Olivera', Arial, sans-serif;
+}
+.proyecto-card-info p,
+.proyecto-card-info li {
+  color: #bdbdbd;
+  font-family: 'Olivera', Arial, sans-serif;
+  font-size: inherit;
+}
+.proyecto-card-info blockquote {
+  border-left: 3px solid #61dafb;
+  margin: 0 0 0 0;
+  padding-left: 16px;
+  color: #bdbdbd;
+  background: none;
+  font-style: normal;
+}
+.proyecto-card-info > *:first-child {
+  margin-top: 0;
 }

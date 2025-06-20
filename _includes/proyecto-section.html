@@ -1,0 +1,11 @@
+{% assign section_parts = include.content | split: '<!-- card -->' %}
+{{ section_parts[0]  }}
+{% for part in section_parts offset:1 %}
+  {% assign card_and_rest = part | split: '<!-- /card -->' %}
+  <div class="proyecto-card-info">
+    {{ card_and_rest[0]  }}
+  </div>
+  {% if card_and_rest.size > 1 %}
+    {{ card_and_rest[1]  }}
+  {% endif %}
+{% endfor %}
