@@ -1,1 +1,14 @@
+# Archivos y carpetas generados por Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
+# Dependencias de Ruby
+/vendor/
+Gemfile.lock
+
+# Archivos temporales de VS Code y sistema
+.vscode/
+.DS_Store
+Thumbs.db

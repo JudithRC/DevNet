@@ -5,7 +5,7 @@ date: 2024-06-10
 author: JudithRC
 categories: proyectos
 permalink: /proyectos/proyecto-prueba/
-estado: completado
+# estado: completado
 ---
 <!-- resumen -->
 Este es un proyecto de prueba para comprobar que la navegación y el diseño funcionan correctamente. Puedes escribir aquí un resumen extenso, con **negritas**, _cursivas_, listas, citas y cualquier formato Markdown.

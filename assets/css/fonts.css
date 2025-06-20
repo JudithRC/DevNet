@@ -8,27 +8,25 @@
 /* =========================
    FUENTES PERSONALIZADAS
    ========================= */
-@font-face {
-  font-family: 'LUXIA';
-  src: url('../fonts/LUXIA-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
+
 @font-face {
   font-family: 'Rustic Roadway';
   src: url('../fonts/RusticRoadway.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Awesome Font';
   src: url('../fonts/Awesome.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Olivera';
   src: url('../fonts/Olivera_Demo.ttf') format('opentype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }

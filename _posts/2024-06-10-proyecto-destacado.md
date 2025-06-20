@@ -5,7 +5,7 @@ date: 2024-06-10
 author: JudithRC
 categories: proyectos
 permalink: /proyectos/proyecto-destacado/
-destacado: Si
+#destacado: Si
 ---
 
 <!-- resumen -->

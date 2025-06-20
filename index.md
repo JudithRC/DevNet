@@ -2,6 +2,7 @@
 layout: default
 #title: DevNest
 author_profile: true
+floating_decor: true
 ---
 
 <script>

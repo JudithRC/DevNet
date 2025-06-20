@@ -5,7 +5,7 @@ date: 2024-06-11
 author: JudithRC
 categories: proyectos
 permalink: /proyectos/proyecto-prueba-2/
-estado: completado
+#estado: completado
 ---
 <!-- resumen -->
 Este es el segundo proyecto de prueba. Sirve para comprobar que la estructura, navegación y formato funcionan correctamente con varios proyectos en el sistema.

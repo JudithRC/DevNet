@@ -5,7 +5,7 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
   <head>
     {%- include head.html -%}
-    <!-- Tu CSS personalizado, después del head del tema -->
+    <!-- CSS personalizado, después del head del tema -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body class="mm-page">
@@ -17,6 +17,9 @@
       {% endif %}
     </header>
     {%- include skip-links.html -%}
+    {% if page.floating_decor %}
+    <script src="{{ '/assets/js/floating-decor.js' | relative_url }}"></script>
+    {% endif %}
     <main id="main" class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
@@ -26,3 +29,4 @@
     {%- include scripts.html -%}
   </body>
 </html>
+    
